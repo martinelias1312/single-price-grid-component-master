@@ -25,7 +25,8 @@ body {
 
 /* -- Main/card -- */
 .card {
-    margin: 2em 1em;
+    margin: 2em auto;
+    max-width: 21.875em;
     display: grid;
 }
 
@@ -97,6 +98,7 @@ section {
 /* Section Why us */
 #why_us {
     background: var(--Cyan);
+    border-radius: 0 0 0.4em 0.4em;
     opacity: 0.7;
     color: var(--Light-Gray);
 }
@@ -111,3 +113,29 @@ section {
 /* -- Footer signature -- */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* -- Media Queries -- */
+@media screen and ( min-width: 1000px ) {
+    .card {
+        margin: 13% auto;
+        max-width: 40em;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section {
+        padding: 2em;
+    }
+
+    #join {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #sub {
+        border-bottom-left-radius: 0.4em;
+    }
+
+    #why_us {
+        border-radius: 0 0 0.4em 0;
+    }
+}
