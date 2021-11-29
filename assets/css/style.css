@@ -5,6 +5,7 @@
 
     --Light-Gray: hsl(204, 43%, 93%);
     --Grayish-Blue: hsl(218, 22%, 67%);
+    --White: #fff;
 }
 
 html {
@@ -17,16 +18,95 @@ html {
 
 body {
     font-size: 1em;
+    font-family: 'Karla', sans-serif;
+    line-height: 1.6em;
     background: var(--Light-Gray);
 }
 
-/* -- Main -- */
-main {
+/* -- Main/card -- */
+.card {
     margin: 2em 1em;
     display: grid;
 }
 
+section {
+    padding: 1.5em;
+}
 
+/* Section JOIN */
+#join {
+    background: var(--White);
+    border-radius: 0.4em 0.4em 0 0;
+}
+
+.card-heading {
+    color: var(--Cyan);
+    font-size: 1.6em;
+}
+
+.guarantee {
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+}
+
+.text {
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+
+/* Section Subscription */
+#sub {
+    background: var(--Cyan);
+    color: var(--Light-Gray);
+}
+
+.sub-heading, .why_us-heading {
+    font-size: 1.4em;
+    margin-top: 0;
+}
+
+.sub-price-p {
+    display: flex;
+    align-items: center;
+}
+
+.sub-price {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.month {
+    opacity: 0.5;
+    margin-left: 1em;
+}
+
+.btn {
+    background: var(--Bright-Yellow);
+    border-radius: 0.3em;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.btn-sign_up {
+    text-decoration: none;
+    color: var(--Light-Gray);
+    font-weight: 700;
+}
+
+/* Section Why us */
+#why_us {
+    background: var(--Cyan);
+    opacity: 0.7;
+    color: var(--Light-Gray);
+}
+
+.why_us-list {
+    list-style: none;
+    opacity: 0.8;
+    padding: 0;
+    line-height: 1.4em;
+}
 
 /* -- Footer signature -- */
 .attribution { font-size: 11px; text-align: center; }
