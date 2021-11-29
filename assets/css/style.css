@@ -17,7 +17,16 @@ html {
 
 body {
     font-size: 1em;
+    background: var(--Light-Gray);
 }
+
+/* -- Main -- */
+main {
+    margin: 2em 1em;
+    display: grid;
+}
+
+
 
 /* -- Footer signature -- */
 .attribution { font-size: 11px; text-align: center; }
