@@ -81,18 +81,21 @@ section {
     margin-left: 1em;
 }
 
-.btn {
-    background: var(--Bright-Yellow);
-    border-radius: 0.3em;
-    text-align: center;
-    padding: 1em;
-    margin-top: 2em;
-}
-
 .btn-sign_up {
     text-decoration: none;
+    text-align: center;
     color: var(--Light-Gray);
     font-weight: 700;
+    background: var(--Bright-Yellow);
+    border-radius: 0.3em;
+    padding: 1em;
+    margin-top: 2em;
+    display: block;
+}
+
+.btn-sign_up:hover, .btn-sign_up:focus {
+    background: var(--Light-Gray);
+    color: var(--Bright-Yellow);
 }
 
 /* Section Why us */
